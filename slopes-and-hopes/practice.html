@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice | Slopes and Hopes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main-pane">
+    <div class="practice-title">Practice</div>
+    <div class="practice-coord">Coordinate: <span id="coord"></span></div>
+    <form id="slope-form" autocomplete="off">
+      <label for="slope-input" class="input-label">Your response:</label>
+      <input id="slope-input" class="slope-input" type="text" placeholder="y = mx + b" required />
+      <button type="submit" style="display:none"></button>
+    </form>
+    <div id="feedback" class="feedback"></div>
+    <canvas id="graph" width="340" height="220" class="graph-canvas"></canvas>
+    <div class="tries-tables">
+      <table class="tries-table left"><tr><th>Correct</th></tr><tr><td id="correct-tries">0</td></tr></table>
+      <table class="tries-table center"><tr><th>Total</th></tr><tr><td id="total-tries">0</td></tr></table>
+      <table class="tries-table right"><tr><th>Incorrect</th></tr><tr><td id="incorrect-tries">0</td></tr></table>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="practice.html">Practice</a>
+    </nav>
+  </main>
+  <script src="practice.js"></script>
+</body>
+</html>
+the 

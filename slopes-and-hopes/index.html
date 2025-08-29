@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slopes and Hopes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <div class="blank-block"></div>
+      <div class="blank-block"></div>
+      <div class="blank-block"></div>
+    </div>
+    <div class="header-right">
+      <span class="game-title">Slopes and Hopes</span>
+    </div>
+  </header>
+  <main class="main-pane">
+    <div class="begin-block" onclick="location.href='practice.html'">
+      <span>Begin</span>
+    </div>
+  <header class="main-header right-header">
+    <span class="game-title">Slopes and Hopes</span>
+  </header>
+  <main class="main-pane">
+    <div style="height: 100vh;"></div>
+    <div class="begin-block hidden-on-load" onclick="location.href='practice.html'">
+      <span>Begin</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="practice.html">Practice</a>
+    </nav>
+  </main>
+  <script>
+    // Reveal Begin button on scroll
+    window.addEventListener('scroll', function() {
+      const begin = document.querySelector('.begin-block');
+      if (window.scrollY > 10) {
+        begin.classList.remove('hidden-on-load');
+      } else {
+        begin.classList.add('hidden-on-load');
+      }
+    });
+  </script>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="practice.html">Practice</a>
+    </nav>
+  </main>
+</body>
+</html>
